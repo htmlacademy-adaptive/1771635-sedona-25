@@ -32,7 +32,7 @@
     </nav>
   </header>
   <main>
-    <article class="intro">
+    <section class="intro">
       <div class="intro__background">
         <img width="320" src="img/Frame.jpg" alt="Sedona">
       </div>
@@ -40,11 +40,11 @@
       <div class="intro__triangle">
         <img src="img/Group3.svg" alt="">
       </div>
-      <section class="intro__facts">
-        <h2 class="intro__description">Седона — небольшой городок в Азизоне, заслуживающий большего!</h2>
-        <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
-    </article>
+      <div class="intro__facts">
+        <h2 class="intro__description">Оставьте свой отзыв</h2>
+        <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+    </section>
 
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="feedback-form__contact-info">
@@ -125,29 +125,29 @@
     </p>
   </footer>
 
-  <article class="popup js-popup-failure">
-    <section class="popup__section">
+  <div class="popup js-popup-failure">
+    <div class="popup__section">
       <h2 class="popup__title">Что-то пошло не так!</h2>
       <p class="popup__text">Проверьте поля, выделенные
         красным, скорее всего вы забыли их
         заполнить
       </p>
-    </section>
+    </div>
     <button class="popup__button">Ok</button>
-  </article>
+  </div>
 
-  <article class="popup js-popup-success">
-    <section class="popup__section">
+  <div class="popup js-popup-success">
+    <div class="popup__section">
       <h2 class="popup__title">Ваш отзыв отправлен!</h2>
       <p class="popup__text">Спасибо за ваше участие, ваш отзыв
         уже поступил к нам.
         В ближайшее время мы опубликуем
         его на сайте.
       </p>
-    </section>
+    </div>
 
     <button class="popup__button">Закрыть окно</button>
-  </article>
+  </div>
 </body>
 
 </html>

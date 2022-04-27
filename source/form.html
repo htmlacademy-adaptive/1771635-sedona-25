@@ -3,48 +3,52 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="img/logo.png" alt="логотип" class="logo">
-    </a>
-    <a class="header__menu-button" href="#" tabindex="1">
-      <img class="header__burger-button" src="img/menu.svg" alt="кнопка меню">
-    </a>
-    <nav class="header-nav">
-      <ul class="header-nav__list">
+    <nav class="header-nav header-nav__opened">
+      <button class="header-nav__close-button" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <ul class="header-nav__list menu">
         <li class="header-nav__item">
-          <a class="headr-nav__link" href="index.html">Главная</a>
+          <a class="header-nav__link" href="index.html">Главная</a>
         </li>
         <li class="header-nav__item">
-          <a class="headr-nav__link" href="gallery.html">Фото и видео</a>
+          <a class="header-nav__link" href="gallery.html">Фото и видео</a>
         </li>
         <li class="header-nav__item">
-          <a class="headr-nav__link" href="form.html">Форма отзыва</a>
+          <a class="header-nav__link" href="form.html">Форма отзыва</a>
         </li>
-        <a class="headr-nav__link" href="https://htmlacademy.ru">
+        <a class="header-nav__link" href="https://htmlacademy.ru">
           <li class="header-nav__item">html academy</li>
         </a>
       </ul>
     </nav>
+    <a class="header__logo" href="index.html">
+      <img class="logo" src="img/logo-sedona-mobile.svg" alt="Лого Седона" width="102" height="83">
+    </a>
+    <div class="header__menu-bar">
+      <button class="header__open-nav-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
   </header>
   <main>
-    <section class="intro">
-      <div class="intro__background">
-        <img width="320" src="img/Frame.jpg" alt="Sedona">
+    <section class="intro intro--inner">
+      <div class="intro__background intro__background--inner">
+        <img width="320" src="img/text-sedona.svg" alt="Sedona">
       </div>
-      <h1 class="intro__title">Sedona</h1>
       <div class="intro__triangle">
-        <img src="img/Group3.svg" alt="">
-      </div>
-      <div class="intro__facts">
-        <h2 class="intro__description">Оставьте свой отзыв</h2>
-        <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </section>
+      <div class="form">
+        <h2 class="form__header">Оставьте свой отзыв</h2>
+        <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+
+      <div class="line"></div>
 
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="feedback-form__contact-info">
@@ -60,6 +64,8 @@
         </label>
       </fieldset>
 
+      <div class="line"></div>
+
       <fieldset class="feedback-form__contact-info">
         <legend class="feedback-form__title">Контактная информация:</legend>
         <label class="feedback-form__field-label">Контактный телефон*:
@@ -74,6 +80,8 @@
         </label>
       </fieldset>
 
+      <div class="line"></div>
+
       <fieldset class="feedback-form__contact-info">
         <legend class="feedback-form__title">Ваше общее впечатление:</legend>
         <label class="feedback-form__field-label">Скорее положительное
@@ -86,6 +94,8 @@
           <input class="feedback-form__selector" type="radio" name="radio" value="neutral">
         </label>
       </fieldset>
+
+      <div class="line"></div>
 
       <fieldset class="feedback-form__contact-info">
         <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
@@ -114,15 +124,19 @@
   </main>
 
   <footer class="footer">
-    <h3 class="footer__title">#visitsedona</h3>
+    <a href="#" class="footer__title">#visitsedona</a>
     <div class="footer__social">
-      <a href="#"><img src="img/vk.png" alt="vk"></a>
-      <a href="#"><img src="img/teleram.png" alt="teleram"></a>
-      <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+      <a class="footer__social-link" href="#"><img src="img/vk.png" alt="vk"></a>
+      <a class="footer__social-link" href="#"><img src="img/teleram.png" alt="teleram"></a>
+      <a class="footer__social-link" href="#"><img src="img/youtube.png" alt="youtube"></a>
     </div>
-    <p class="main-footer__copyright">
-      Разработано в<a href="https://htmlacademy.ru"><img class="main-footer__copyright-icon" src="img/htmlacademy.svg" width="25" alt="htmlacademy"></a>
-    </p>
+    <div class="footer_wrap">
+      <p class="footer__copyright">
+        Разработано в </p>
+      <a class="footer__copyright-link" href=" https://htmlacademy.ru">
+        <img class="footer__copyright-icon" src="img/htmlacademy.svg" width="25" alt="htmlacademy">
+      </a>
+    </div>
   </footer>
 
   <div class="popup js-popup-failure">
@@ -145,9 +159,9 @@
         его на сайте.
       </p>
     </div>
-
     <button class="popup__button">Закрыть окно</button>
   </div>
+  <script src="js/main-nav.js" charset="utf-8"></script>
 </body>
 
 </html>

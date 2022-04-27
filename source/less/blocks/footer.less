@@ -1,0 +1,90 @@
+.footer {
+
+  padding: 40px 20px 25px;
+}
+
+.footer__title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 6px;
+  background-color: @light-grey-blue;
+  text-decoration: none;
+  border: 0;
+  border-top: 1px solid rgba(@white, 0.2);
+  border-bottom: 1px solid rgba(@black, 0.2);
+
+  &:hover,
+  &:focus {
+    background-color: darken(@light-grey-blue, 10%);
+  }
+}
+
+.footer_wrap {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+.footer__copyright {
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.footer__copyright-icon {
+  display: block;
+}
+
+
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: @tablet-width;
+    margin: 0 auto;
+    background-color: @white;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__hashtag {
+    margin: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+}
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}

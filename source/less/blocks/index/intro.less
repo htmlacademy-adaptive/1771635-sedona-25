@@ -1,0 +1,114 @@
+.intro {
+  background-color: @white;
+  background-image: url("../../../img/bg-intro-triangle-mobile.svg"),
+    url('../../../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center top;
+  background-size: cover;
+  height: 390px;
+
+  &--inner {
+    height: 158px;
+    background-size: auto, auto;
+    background-position: left bottom, left bottom;
+  }
+
+}
+
+.intro__background {
+  text-align: center;
+  padding-top: 90px;
+
+  &--inner {
+    padding-top: 52px;
+  }
+
+}
+
+/*************************************
+* Tablet styles
+*************************************/
+@media (min-width: @tablet-width) {
+  .intro {
+    background-color: @white;
+    background-image: url("../../../img/bg-intro-triangle-mobile.svg"),
+      url('../../../img/bg-back-mobile@1x.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center top;
+    background-size: auto, cover;
+    height: 518px;
+
+  }
+
+  .intro__text-image {
+    width: 460px;
+  }
+
+  .intro__background {
+    padding-top: 77px;
+
+  }
+}
+
+/*************************************
+* desktop styles
+*************************************/
+@media (min-width: @desktop-width) {
+  .intro {
+    width: @desktop-width;
+    margin: 0 auto;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"),
+      url('../img/bg-back-desktop@1x.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center top;
+    background-size: auto, cover;
+    height: 518px;
+
+    // &--inner {
+    //   height: 300px;
+    //   background-position: left bottom, left bottom;
+    //   background-size: contain, cover;
+    // }
+  }
+
+  // .intro__background {
+
+  //   &--inner {
+  //     padding-top: 95px;
+  //   }
+  // }
+
+}
+
+.intro__facts {
+
+  margin: 100px 30px 0;
+  text-align: center;
+}
+
+.intro__description {
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.intro__text {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: @tablet-width) {
+  .intro__facts {
+    width: 490px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+
+  }
+}

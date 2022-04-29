@@ -56,8 +56,6 @@
 //   border: 5px solid @gray-concrete;
 // }
 
-
-
 .feedback-form__button {
   // align-items:center;
   margin: 0 15px;
@@ -92,8 +90,8 @@
   }
 }
 
-.feedback-form__selector:hover+.feedback-form__selector-indicator,
-.feedback-form__selector:focus+.feedback-form__selector-indicator {
+.feedback-form__selector:hover+ .feedback-form__selector-indicator,
+.feedback-form__selector:focus+ .feedback-form__selector-indicator {
   background-color: @gray-mercury;
 }
 
@@ -111,11 +109,11 @@
   border-radius: 50%;
 }
 
-.feedback-form__selector--radio:checked+.feedback-form__selector-indicator:active::before {
+.feedback-form__selector--radio:checked+ .feedback-form__selector-indicator:active::before {
   opacity: 0.3;
 }
 
-.feedback-form__selector--checkbox:checked+.feedback-form__selector-indicator::before {
+.feedback-form__selector--checkbox:checked+ .feedback-form__selector-indicator::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -128,6 +126,6 @@
   background: url("../../../img/Shape.svg") no-repeat;
 }
 
-.feedback-form__selector--checkbox:checked+.feedback-form__selector-indicator:active::before {
+.feedback-form__selector--checkbox:checked+ .feedback-form__selector-indicator:active::before {
   opacity: 0.3;
 }

@@ -34,6 +34,7 @@
   // font-size: 18px;
   border: none;
   background-color: @gray-concrete;
+
   &:hover {
     background-color: @gray-mercury;
   }
@@ -64,8 +65,8 @@
 
 .feedback-form__selector {
   position: absolute;
-	// z-index: -1;
-	opacity: 1;
+  // z-index: -1;
+  opacity: 1;
 }
 
 .feedback-form__selector-indicator {
@@ -86,14 +87,14 @@
   }
 
   &:active {
-      background-color: @gray-iron;
-      border: 1px solid @gray-iron;
+    background-color: @gray-iron;
+    border: 1px solid @gray-iron;
   }
 }
 
-.feedback-form__selector:hover + .feedback-form__selector-indicator,
-.feedback-form__selector:focus + .feedback-form__selector-indicator {
-background-color: @gray-mercury;
+.feedback-form__selector:hover+.feedback-form__selector-indicator,
+.feedback-form__selector:focus+.feedback-form__selector-indicator {
+  background-color: @gray-mercury;
 }
 
 .feedback-form__selector--radio:checked {
@@ -110,11 +111,11 @@ background-color: @gray-mercury;
   border-radius: 50%;
 }
 
-.feedback-form__selector--radio:checked + .feedback-form__selector-indicator:active::before {
-opacity: 0.3;
+.feedback-form__selector--radio:checked+.feedback-form__selector-indicator:active::before {
+  opacity: 0.3;
 }
 
-.feedback-form__selector--checkbox:checked + .feedback-form__selector-indicator::before {
+.feedback-form__selector--checkbox:checked+.feedback-form__selector-indicator::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -127,6 +128,6 @@ opacity: 0.3;
   background: url("../../../img/Shape.svg") no-repeat;
 }
 
-.feedback-form__selector--checkbox:checked + .feedback-form__selector-indicator:active::before {
-opacity: 0.3;
+.feedback-form__selector--checkbox:checked+.feedback-form__selector-indicator:active::before {
+  opacity: 0.3;
 }

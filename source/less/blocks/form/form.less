@@ -1,0 +1,131 @@
+.form {
+  width: @mobile-width;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+// .feedback-form {
+// margin: 0 20px;
+// }
+
+.feedback-form__contact-info {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__title {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.feedback-form__field-label {
+  text-transform: uppercase;
+  margin-right: 13px;
+}
+
+.feedback-form__field-input {
+  margin: 10px 0;
+  padding: 15px 14px;
+  font-weight: bold;
+  // font-size: 18px;
+  border: none;
+  background-color: @gray-concrete;
+
+  &:hover {
+    background-color: @gray-mercury;
+  }
+
+  &:focus {
+    background-color: @white;
+    border: 2px solid @gray-mercury;
+    padding: 15px;
+  }
+}
+
+.feedback-form__container {
+  display: flex;
+  align-items: center;
+}
+
+// .feedback-form__selector {
+//   background-color: rgba(239, 39, 39, 0.893);
+//   border: 5px solid @gray-concrete;
+// }
+
+.feedback-form__button {
+  // align-items:center;
+  margin: 0 15px;
+}
+
+.feedback-form__selector {
+  position: absolute;
+  // z-index: -1;
+  opacity: 1;
+}
+
+.feedback-form__selector-indicator {
+  position: relative;
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin-right: 22px;
+
+  background-color: @gray-concrete;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 5px;
+  }
+
+  &:active {
+    background-color: @gray-iron;
+    border: 1px solid @gray-iron;
+  }
+}
+
+.feedback-form__selector:hover + .feedback-form__selector-indicator,
+.feedback-form__selector:focus + .feedback-form__selector-indicator {
+  background-color: @gray-mercury;
+}
+
+.feedback-form__selector--radio:checked {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 32px;
+  height: 32px;
+  // margin-top: -11px;
+  // margin-left: -11px;
+  background-color: @black;
+  border-radius: 50%;
+}
+
+.feedback-form__selector--radio:checked + .feedback-form__selector-indicator:active::before {
+  opacity: 0.3;
+}
+
+.feedback-form__selector--checkbox:checked + .feedback-form__selector-indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 24px;
+  height: 16px;
+  margin-top: -8px;
+  margin-left: -12px;
+  background: url("../../../img/Shape.svg") no-repeat;
+}
+
+.feedback-form__selector--checkbox:checked + .feedback-form__selector-indicator:active::before {
+  opacity: 0.3;
+}

@@ -37,35 +37,36 @@
 /*************************************
  * Tablet styles
  *************************************/
-//  @media (min-width: @tablet-width) {
-//   .menu {
-//     display: flex;
-//   }
+ @media (min-width: @tablet-width) {
+  .menu {
+    display: flex;
+  }
 
-//   // .menu__item--spacer {
-//   //   flex-grow: 1;
-//   // }
+  .menu__item--spacer {
+    flex-grow: 1;
+  }
 
-//   .header__link {
-//     border: none;
-//     width: 153px;
-//     font-size: 14px;
-//     font-weight: bold;
-//     color: @black;
-//     background-color: @white;
+  .header-nav__link {
+    border: none;
+    width: 153px;
+    font-size: 14px;
+    font-weight: bold;
+    color: @black;
+    background-color: @white;
 
-//     &:hover,
-//     &:focus {
-//         color: @light-grey-blue;
-//         background-color: @white;
-//     }
+    &:hover,
+    &:focus {
+        color: @light-grey-blue;
+        background-color: @white;
+    }
 
-//     &:active {
-//         color: rgba(@black, 0.3);
+    &:active {
+        color: rgba(@black, 0.3);
 
-//         background-color: @white;
-//     }
-//   }
+        background-color: @white;
+    }
+
+  }
 
 //   .menu__link:not([href]) {
 //     color: @greyish-brown;
@@ -86,13 +87,13 @@
 //         background: none;
 //     }
 //   }
-// }
+ }
 
-// /*************************************
-//  * desktop styles
-//  *************************************/
-// @media (min-width: @desktop-width) {
-//   .menu__link {
-//     width: 240px;
-//   }
-// }
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: @desktop-width) {
+  .menu__link {
+    width: @desktop-width;
+  }
+}

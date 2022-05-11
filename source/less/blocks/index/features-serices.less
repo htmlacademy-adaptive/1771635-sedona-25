@@ -24,3 +24,36 @@
   font-size: 20px;
   margin-left: 50px;
 }
+
+@media (min-width: @tablet-width) {
+  .features-serices__list {
+    margin: 0 auto;
+    display: flex;
+
+  }
+
+  .features-serices__wrapper {
+    flex-direction: column;
+  }
+
+  .features-serices__title {
+    margin: 25px 0;
+  }
+
+  .features-serices__description {
+    text-align: center;
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: @desktop-width) {
+  .features-serices {
+    width: @desktop-width;
+    margin: 0 auto;
+    // margin-right: 50px;
+  }
+}

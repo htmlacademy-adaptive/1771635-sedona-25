@@ -13,7 +13,7 @@
       <button class="header-nav__close-button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-      <ul class="header-nav__list menu">
+      <ul class="header-nav__list menu header-nav__list--no-js">
         <li class="header-nav__item">
           <a class="header-nav__link" href="index.html">Главная</a>
         </li>
@@ -23,19 +23,19 @@
         <li class="header-nav__item">
           <a class="header-nav__link" href="form.html">Форма отзыва</a>
         </li>
-        <a class="header-nav__link" href="https://htmlacademy.ru">
-          <li class="header-nav__item">html academy</li>
-        </a>
+        <li class="header-nav__item" href="https://htmlacademy.ru">
+          <a class="header-nav__link">html academy</a>
+        </li>
       </ul>
     </nav>
     <a class="header__logo" href="index.html">
-      <img class="logo" src="img/logo-sedona-mobile.svg" alt="Лого Седона" width="102" height="83">
+      <img class="logo" src="img/logo-sedona-mobile.svg" alt="Лого Седона">
     </a>
     <div class="header__menu-bar">
       <button class="header__open-nav-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
   </header>
-  <main>
+  <main class="container">
     <section class="intro">
       <div class="intro__background">
         <div class="intro__img">
@@ -43,11 +43,12 @@
             alt="Промо текст Седона">
         </div>
       </div>
-      <div class="intro__facts">
-        <h2 class="intro__description">Седона — небольшой городок в Азизоне, заслуживающий большего!</h2>
-        <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </div>
+
     </section>
+    <div class="intro__facts">
+      <h2 class="intro__description">Седона — небольшой городок в Азизоне, заслуживающий большего!</h2>
+      <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
 
     <section class="features">
       <div class="features__background">
@@ -57,7 +58,7 @@
         <p class="feature__text">— №1 —</p>
         <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <img class="features__image" src="img/photo-city-mobile@1x.jpg" alt="Седона Сити">
+      <img class="features__image" src="img/photo-city@1x.jpg" alt="Седона Сити">
     </section>
 
     <section class="features-serices">
@@ -87,31 +88,40 @@
       </ul>
     </section>
 
-    <section class="features">
+    <section class="features features--revers">
       <div class="features__background features__background--no-triangle">
         <h3 class="features__title">Там есть мост дьявола</h3>
         <p class="feature__text">— №2 —</p>
         <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
       </div>
-      <img class="feature__image" src="img/photo-bridge-mobile@1x.jpg" alt="bridge">
+      <img class="features__image features__image--revers" src="img/photo-bridge@1x.jpg" alt="bridge">
     </section>
 
     <section class="features feature--background-gray">
-      <h3 class="features__title--color">Небольшая плошадь</h3>
-      <p class="feature__text--color">— №3 —</p>
-      <p class="feature__text--color">Все интересные места находятся очень близко</p>
+      <div>
+        <h3 class="features__title--color">Небольшая плошадь</h3>
+        <p class="feature__text--color">— №3 —</p>
+        <p class="feature__text--color">Все интересные места находятся очень близко</p>
+      </div>
+
 
       <div class="features__line"></div>
 
-      <h3 class="features__title--color">Красивая лорога</h3>
-      <p class="feature__text--color">— №4 —</p>
-      <p class="feature__text--color">Ехать в седону из лас-вегаса совсем не скучно!</p>
+      <div>
+        <h3 class="features__title--color">Красивая лорога</h3>
+        <p class="feature__text--color">— №4 —</p>
+        <p class="feature__text--color">Ехать в седону из лас-вегаса совсем не скучно!</p>
+      </div>
+
 
       <div class="features__line"></div>
 
-      <h3 class="features__title--color">Мало туристов</h3>
-      <p class="feature__text--color">— №5 —</p>
-      <p class="feature__text--color">Большинство едет в гранд каньони толпится там</p>
+      <div>
+        <h3 class="features__title--color">Мало туристов</h3>
+        <p class="feature__text--color">— №5 —</p>
+        <p class="feature__text--color">Большинство едет в гранд каньони толпится там</p>
+      </div>
+
     </section>
 
     <section class="search-hotel">
@@ -124,7 +134,7 @@
     </section>
 
     <section class="map">
-      <img width="320" height="350" src="img/map-mobile.jpg" alt="Map 0f Sedona">
+      <img  src="img/map-desktop.jpg.jpg" alt="Map 0f Sedona">
     </section>
   </main>
 

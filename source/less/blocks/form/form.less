@@ -95,7 +95,7 @@
   background-color: @gray-mercury;
 }
 
-.feedback-form__selector--radio:checked {
+.feedback-form__selector:checked {
   content: "";
   position: absolute;
   top: 50%;
@@ -103,17 +103,17 @@
   display: block;
   width: 32px;
   height: 32px;
-  // margin-top: -11px;
-  // margin-left: -11px;
+  margin-top: -11px;
+  margin-left: -11px;
   background-color: @black;
   border-radius: 50%;
 }
 
-.feedback-form__selector--radio:checked + .feedback-form__selector-indicator:active::before {
+.feedback-form__selector:checked + .feedback-form__selector-indicator:active::before {
   opacity: 0.3;
 }
 
-.feedback-form__selector--checkbox:checked + .feedback-form__selector-indicator::before {
+.feedback-form__selector:checked + .feedback-form__selector-indicator::before {
   content: "";
   position: absolute;
   top: 50%;

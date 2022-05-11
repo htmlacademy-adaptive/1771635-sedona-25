@@ -14,4 +14,3 @@ navToggle.addEventListener('click', () => {
     navToggle.querySelector('span').textContent = 'Открыть меню навигации';
   }
 });
-

@@ -7,6 +7,7 @@
 .picture__title {
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .picture__likes-counter {
@@ -25,4 +26,57 @@
 .picture__count {
   font-weight: bold;
   margin-left: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .big {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  .picture__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @gray-concrete;
+    padding: 20px 0 15px;
+    margin: 0 auto;
+  }
+
+  .picture__title {
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: @line-height-base;
+    font-size: @font-size-base;
+  }
+
+  .picture__text {
+    margin: 0 20px;
+    line-height: 24px;
+  }
+
+  .picture__likes-counter {
+    background-color: @gray-concrete;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+  .picture__like-button {
+    background-color: @gray-concrete;
+    padding: 0;
+    border: transparent;
+    cursor: pointer;
+    fill: #b2b2b2;
+  }
 }

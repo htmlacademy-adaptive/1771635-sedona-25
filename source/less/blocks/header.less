@@ -33,10 +33,6 @@
   margin-left: -51px;
 }
 
-.logo {
-  width: 102px;
-  height: 83px;
-}
 
 .header__menu-bar {
   display: flex;
@@ -50,7 +46,7 @@
 *************************************/
 @media (min-width: @tablet-width) {
   .header {
-    width: 768px;
+    width: @tablet-width;
   }
 
   .header__menu-bar {
@@ -68,6 +64,7 @@
 @media (min-width: @desktop-width) {
   .header {
     width: @desktop-width;
+    // max-width: 1200px;
   }
 
   .header__logo {
